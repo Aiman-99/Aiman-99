@@ -28,7 +28,7 @@ export default function Itinerary() {
       </div>
 
       <div className="text-center mt-12 text-sm text-gray-600">
-        <p>Dress Code: Sage Green (Pihak Lelaki) </p>
+        <p>Dress Code: Green (Pihak Lelaki) </p>
         <p>Hubungi: Aiman (017-5448767)</p>
       </div>
     </section>

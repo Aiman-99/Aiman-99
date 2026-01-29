@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <main className="scroll-smooth">
       <Hero />
-      <RSVP />
-      <Itinerary />
+      {/* <RSVP />
+      <Itinerary /> */}
     </main>
   );
 }
