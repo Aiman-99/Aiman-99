@@ -240,7 +240,7 @@ export default function Hero() {
             </motion.div>
 
             {/* Countdown */}
-            <motion.div variants={itemVariants} className="w-full mb-8">
+            <motion.div variants={itemVariants} className="space-y-3 mb-8">
               <Countdown />
             </motion.div>
 
