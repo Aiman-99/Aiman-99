@@ -1,7 +1,6 @@
 "use client";
-// @ts-nocheck
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 import FloatingPetals from "@/components/FloatingPetals";
 import Countdown from "@/components/Countdown";
@@ -48,8 +47,8 @@ export default function Hero() {
     }
   };
 
-  // Animation variants
-  const containerVariants = {
+  // Animation variants - Fixed TypeScript typing
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -60,19 +59,19 @@ export default function Hero() {
     },
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 30 },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
         duration: 0.8,
-        ease: [0.6, 0.05, 0.01, 0.9],
+        ease: [0.6, 0.05, 0.01, 0.9] as any,
       },
     },
   };
 
-  const nameVariants = {
+  const nameVariants: Variants = {
     hidden: { opacity: 0, scale: 0.8, y: 40 },
     visible: {
       opacity: 1,
@@ -80,19 +79,19 @@ export default function Hero() {
       y: 0,
       transition: {
         duration: 1,
-        ease: [0.6, 0.05, 0.01, 0.9],
+        ease: [0.6, 0.05, 0.01, 0.9] as any,
       },
     },
   };
 
-  const sectionVariants = {
+  const sectionVariants: Variants = {
     hidden: { opacity: 0, y: 50 },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
         duration: 0.8,
-        ease: [0.6, 0.05, 0.01, 0.9],
+        ease: [0.6, 0.05, 0.01, 0.9] as any,
       },
     },
   };
@@ -127,7 +126,7 @@ export default function Hero() {
       <motion.div
         initial={{ opacity: 0, scale: 0.9, y: 50 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
-        transition={{ duration: 1.2, ease: [0.6, 0.05, 0.01, 0.9] }}
+        transition={{ duration: 1.2, ease: [0.6, 0.05, 0.01, 0.9] as any }}
         className="relative z-10 w-full max-w-4xl mb-12"
       >
         {/* Decorative corner elements */}
@@ -241,7 +240,7 @@ export default function Hero() {
             </motion.div>
 
             {/* Countdown */}
-            <motion.div variants={itemVariants} className="space-y-3 mb-8">
+            <motion.div variants={itemVariants} className="w-full mb-8">
               <Countdown />
             </motion.div>
 
