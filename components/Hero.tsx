@@ -367,7 +367,7 @@ export default function Hero() {
 
             {/* Instruction Text */}
             <p className="mb-8 max-w-md text-[#5A4A2A] text-base sm:text-lg leading-relaxed">
-              Sila sahkan kehadiran anda sebelum <span className="font-semibold text-[#8B6B2E]">23 Mac 2026</span>. Terima kasih!
+              Sila sahkan kehadiran anda sebelum <span className="font-semibold text-[#8B6B2E]">16 Mac 2026</span>. Terima kasih!
             </p>
 
             {/* Google Form Button */}
