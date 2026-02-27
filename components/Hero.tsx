@@ -233,10 +233,10 @@ export default function Hero() {
                 <span className="text-2xl">📅</span>
                 <span>23 Mac 2026</span>
               </p>
-              <p className="text-lg sm:text-xl text-[#5A4A2A] font-medium flex items-center justify-center gap-2">
+              {/* <p className="text-lg sm:text-xl text-[#5A4A2A] font-medium flex items-center justify-center gap-2">
                 <span className="text-2xl">📍</span>
                 <span>Bandar Bukit Mahkota, Selangor</span>
-              </p>
+              </p> */}
             </motion.div>
 
             {/* Countdown */}
@@ -245,7 +245,7 @@ export default function Hero() {
             </motion.div>
 
             {/* Location Button */}
-            <motion.a
+            {/* <motion.a
               variants={itemVariants}
               href="https://maps.app.goo.gl/Xcu3Y3cVvR2J3stt7"
               target="_blank"
@@ -256,9 +256,25 @@ export default function Hero() {
             >
               <span className="text-xl group-hover:scale-110 transition-transform">📍</span>
               <span>Lokasi Majlis</span>
-            </motion.a>
+            </motion.a> */}
 
+            {/* RSVP Button */}
+            <motion.a
+              variants={itemVariants}
+              href="#rsvp"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById("rsvp")?.scrollIntoView({ behavior: "smooth" });
+              }}
+              whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(139,107,46,0.3)" }}
+              whileTap={{ scale: 0.98 }}
+              className="px-8 py-4 bg-gradient-to-r from-[#8B6B2E] to-[#6B5223] text-white rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 font-medium text-lg flex items-center gap-2 group cursor-pointer"
+            >
+              <span className="text-xl group-hover:scale-110 transition-transform">💌</span>
+              <span>KEHADIRAN</span>
+            </motion.a>
             {/* Decorative divider bottom */}
+
             <motion.div
               variants={itemVariants}
               className="w-32 h-px bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mt-8"
@@ -322,7 +338,7 @@ export default function Hero() {
               <div className="flex items-center justify-center gap-2">
                 <span className="text-xl">📞</span>
                 <p className="text-base sm:text-lg">
-                  <span className="font-semibold">Hubungi:</span> Aiman (017-5448767)
+                  <span className="font-semibold">Hubungi:</span> Aiman (017-5448767) atau Rushamilla (010-4374886)
                 </p>
               </div>
             </div>
@@ -332,6 +348,7 @@ export default function Hero() {
 
       {/* 💌 RSVP SECTION */}
       <motion.div
+        id="rsvp"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
@@ -354,17 +371,31 @@ export default function Hero() {
             </p>
 
             {/* Google Form Button */}
-            <motion.a
-              href="https://forms.gle/4LEohL7hdnmAo9qY9"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(16,185,129,0.3)" }}
-              whileTap={{ scale: 0.98 }}
-              className="px-8 py-4 bg-gradient-to-r from-emerald-500 to-emerald-600 text-white rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 font-medium text-lg flex items-center gap-2 group"
-            >
-              <span className="text-xl group-hover:scale-110 transition-transform">📝</span>
-              <span>Isi Borang Kehadiran</span>
-            </motion.a>
+            <div className="flex flex-row flex-wrap justify-center gap-4">
+              <motion.a
+                href="https://forms.gle/4LEohL7hdnmAo9qY9"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(16,185,129,0.3)" }}
+                whileTap={{ scale: 0.98 }}
+                className="px-8 py-4 bg-gradient-to-r from-emerald-500 to-emerald-600 text-white rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 font-medium text-lg flex items-center gap-2 group"
+              >
+                <span className="text-xl group-hover:scale-110 transition-transform">📝</span>
+                <span>Kehadiran Pihak Lelaki</span>
+              </motion.a>
+
+              <motion.a
+                href="https://forms.gle/SZEpimYrvWTq6er18"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(16,185,129,0.3)" }}
+                whileTap={{ scale: 0.98 }}
+                className="px-8 py-4 bg-gradient-to-r from-emerald-500 to-emerald-600 text-white rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 font-medium text-lg flex items-center gap-2 group"
+              >
+                <span className="text-xl group-hover:scale-110 transition-transform">📝</span>
+                <span>Kehadiran Pihak Perempuan</span>
+              </motion.a>
+            </div>
           </div>
         </div>
       </motion.div>
