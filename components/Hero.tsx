@@ -329,12 +329,12 @@ export default function Hero() {
 
             {/* Additional Info */}
             <div className="text-center mt-10 space-y-3 text-[#5A4A2A]">
-              <div className="flex items-center justify-center gap-2">
+              {/* <div className="flex items-center justify-center gap-2">
                 <span className="text-xl">👔</span>
                 <p className="text-base sm:text-lg">
                   <span className="font-semibold">Dress Code:</span> Green (Pihak Lelaki)
                 </p>
-              </div>
+              </div> */}
               <div className="flex items-center justify-center gap-2">
                 <span className="text-xl">📞</span>
                 <p className="text-base sm:text-lg">
