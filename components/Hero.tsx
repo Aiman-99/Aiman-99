@@ -284,25 +284,25 @@ export default function Hero() {
       </motion.div>
 
       {/* 📋 ITINERARY SECTION */}
-      <motion.div
+      {/* <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
         variants={sectionVariants}
         className="relative z-10 w-full max-w-4xl mb-12"
       >
-        <div className="rounded-3xl shadow-2xl border-2 border-[#D4AF37]/40 bg-white/90 backdrop-blur-xl overflow-hidden">
-          <div className="px-6 sm:px-12 py-12 sm:py-16">
+        {/* <div className="rounded-3xl shadow-2xl border-2 border-[#D4AF37]/40 bg-white/90 backdrop-blur-xl overflow-hidden">
+          <div className="px-6 sm:px-12 py-12 sm:py-16"> */}
             {/* Section Title */}
-            <div className="text-center mb-10">
+            {/* <div className="text-center mb-10">
               <h2 className="text-3xl sm:text-4xl font-bold text-[#8B6B2E] mb-3" style={{ fontFamily: "var(--font-geist-mono)" }}>
                 ATURCARA MAJLIS
               </h2>
               <div className="w-24 h-1 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mx-auto" />
-            </div>
+            </div> */}
 
             {/* Timeline */}
-            <div className="max-w-xl mx-auto space-y-6">
+            {/* <div className="max-w-xl mx-auto space-y-6">
               {[
                 { time: "11:00 AM", event: "Kehadiran Tetamu" },
                 { time: "12:00 PM", event: "Majlis Bermula" },
@@ -325,80 +325,111 @@ export default function Hero() {
                   </span>
                 </motion.div>
               ))}
-            </div>
+            </div> */}
 
             {/* Additional Info */}
-            <div className="text-center mt-10 space-y-3 text-[#5A4A2A]">
+            {/* <div className="text-center mt-10 space-y-3 text-[#5A4A2A]"> */}
               {/* <div className="flex items-center justify-center gap-2">
                 <span className="text-xl">👔</span>
                 <p className="text-base sm:text-lg">
                   <span className="font-semibold">Dress Code:</span> Green (Pihak Lelaki)
                 </p>
               </div> */}
-              <div className="flex items-center justify-center gap-2">
+              {/* <div className="flex items-center justify-center gap-2">
                 <span className="text-xl">📞</span>
                 <p className="text-base sm:text-lg">
                   <span className="font-semibold">Hubungi:</span> Aiman (017-5448767) atau Rushamilla (010-4374886)
                 </p>
-              </div>
-            </div>
+              </div> */}
+            {/* </div>
           </div>
         </div>
-      </motion.div>
+      </motion.div> */}
 
       {/* 💌 RSVP SECTION */}
       <motion.div
-        id="rsvp"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-100px" }}
-        variants={sectionVariants}
-        className="relative z-10 w-full max-w-4xl mb-12"
-      >
-        <div className="rounded-3xl shadow-2xl border-2 border-[#D4AF37]/40 bg-white/90 backdrop-blur-xl overflow-hidden">
-          <div className="px-6 sm:px-12 py-12 sm:py-16 flex flex-col items-center text-center">
-            {/* Section Title */}
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#8B6B2E] mb-6" style={{ fontFamily: "var(--font-geist-mono)" }}>
-              RSVP
-            </h2>
+  id="rsvp"
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true, margin: "-100px" }}
+  variants={sectionVariants}
+  className="relative z-10 w-full max-w-4xl mb-12"
+>
+  <div className="rounded-3xl shadow-2xl border-2 border-[#D4AF37]/40 bg-white/90 backdrop-blur-xl overflow-hidden">
+    <div className="px-6 sm:px-12 py-12 sm:py-16 flex flex-col items-center text-center">
 
-            {/* Decorative divider */}
-            <div className="w-24 h-1 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mb-8" />
+      {/* Section Title */}
+      <h2 className="text-3xl sm:text-4xl font-bold text-[#8B6B2E] mb-3 tracking-[0.2em]" style={{ fontFamily: "var(--font-geist-mono)" }}>
+        RSVP
+      </h2>
 
-            {/* Instruction Text */}
-            <p className="mb-8 max-w-md text-[#5A4A2A] text-base sm:text-lg leading-relaxed">
-              Sila sahkan kehadiran anda sebelum <span className="font-semibold text-[#8B6B2E]">16 Mac 2026</span>. Terima kasih!
-            </p>
+      {/* Decorative divider */}
+      <div className="flex items-center gap-3 mb-6">
+        <div className="w-12 h-px bg-gradient-to-r from-transparent to-[#D4AF37]" />
+        <div className="w-2 h-2 bg-[#D4AF37] rotate-45" />
+        <div className="w-12 h-px bg-gradient-to-l from-transparent to-[#D4AF37]" />
+      </div>
 
-            {/* Google Form Button */}
-            <div className="flex flex-row flex-wrap justify-center gap-4">
-              <motion.a
-                href="https://forms.gle/4LEohL7hdnmAo9qY9"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(16,185,129,0.3)" }}
-                whileTap={{ scale: 0.98 }}
-                className="px-8 py-4 bg-gradient-to-r from-emerald-500 to-emerald-600 text-white rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 font-medium text-lg flex items-center gap-2 group"
-              >
-                <span className="text-xl group-hover:scale-110 transition-transform">📝</span>
-                <span>Kehadiran Pihak Lelaki</span>
-              </motion.a>
+      {/* Instruction Text */}
+      <p className="mb-8 max-w-md text-[#5A4A2A] text-base sm:text-lg leading-relaxed">
+        Sila sahkan kehadiran anda sebelum{" "}
+        <span className="font-semibold text-[#8B6B2E] border-b border-[#D4AF37]">16 Mac 2026</span>.{" "}
+        Terima kasih!
+      </p>
 
-              <motion.a
-                href="https://forms.gle/SZEpimYrvWTq6er18"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(16,185,129,0.3)" }}
-                whileTap={{ scale: 0.98 }}
-                className="px-8 py-4 bg-gradient-to-r from-emerald-500 to-emerald-600 text-white rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 font-medium text-lg flex items-center gap-2 group"
-              >
-                <span className="text-xl group-hover:scale-110 transition-transform">📝</span>
-                <span>Kehadiran Pihak Perempuan</span>
-              </motion.a>
-            </div>
-          </div>
+      {/* Buttons */}
+      <div className="flex flex-row flex-wrap justify-center gap-4 mb-8">
+        <motion.a
+          href="https://forms.gle/4LEohL7hdnmAo9qY9"
+          target="_blank"
+          rel="noopener noreferrer"
+          whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(139,107,46,0.3)" }}
+          whileTap={{ scale: 0.98 }}
+          className="px-7 py-4 bg-gradient-to-r from-[#8B6B2E] to-[#6B5223] text-white rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 font-medium text-base sm:text-lg flex items-center gap-2 group"
+        >
+          <span className="text-xl group-hover:scale-110 transition-transform">🤵</span>
+          <span>Pihak Lelaki</span>
+        </motion.a>
+
+        <motion.a
+          href="https://forms.gle/SZEpimYrvWTq6er18"
+          target="_blank"
+          rel="noopener noreferrer"
+          whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(212,175,55,0.3)" }}
+          whileTap={{ scale: 0.98 }}
+          className="px-7 py-4 bg-gradient-to-r from-[#D4AF37] to-[#B8942E] text-white rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 font-medium text-base sm:text-lg flex items-center gap-2 group"
+        >
+          <span className="text-xl group-hover:scale-110 transition-transform">👰</span>
+          <span>Pihak Perempuan</span>
+        </motion.a>
+      </div>
+
+      {/* Divider */}
+      <div className="w-48 h-px bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mb-6" />
+
+      {/* Contact Info */}
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 text-black">
+        <div className="flex items-center gap-2">
+          <span className="text-xl">📞</span>
+          <p className="text-sm sm:text-base">
+            <span className="font-semibold text-[#8B6B2E]">Aiman</span>{" "}
+            <a href="tel:+601754487677" className="hover:text-[#D4AF37] transition-colors">017-5448767</a>
+          </p>
         </div>
-      </motion.div>
+        <div className="hidden sm:block w-1 h-1 bg-[#D4AF37] rounded-full" />
+        <div className="flex items-center gap-2">
+          <span className="text-xl">📞</span>
+          <p className="text-sm sm:text-base">
+            <span className="font-semibold text-[#8B6B2E]">Rushamilla</span>{" "}
+            <a href="tel:+60104374886" className="hover:text-[#D4AF37] transition-colors">010-4374886</a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</motion.div>
+
 
       {/* 🎵 AUDIO */}
       <audio ref={audioRef} loop>
